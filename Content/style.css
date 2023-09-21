@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --body-color: #ececec;
+    --header-text-color: #333333;
+    --header-text-color-2: #666666;
+    --text-color: #929294;
+    --green: #1fa185;
+    --green-dark: #146352;
+    --black: #17242A;
+    --purple: #3c428c;
+}
+
+@font-face {
+    font-family: font-vazir;
+    src: url(../Font/Vazir-Medium-FD-WOL.ttf);
+}
+
+body {
+    background-color: var(--body-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: font-vazir;
+}
+
+.parent-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+h1 {
+    color: var(--purple);
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    color: var(--green);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.all-product,
+.user-basket {
+    margin: 0rem 0 5rem 0;
+    background-color: #fff;
+    width: 80%;
+    border: 2px solid #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-all-product,
+.ul-user-basket {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-all-product-header {
+    padding: 0 0 1rem 0;
+}
+
+.item-all-product,
+.item-user-basket {
+    width: 85%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid var(--green);
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .price,
+.card .id {
+    color: var(--header-text-color);
+}
+
+.card .title,
+.card .price,
+.card .id,
+.card .title-default,
+.card .price-default,
+.card .id-default {
+    padding: 0 1.8rem;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card .price,
+.card .id,
+.total-price-text {
+    color: var(--header-text-color-2);
+}
+
+.price-number {
+    color: var(--green);
+}
+
+.card .title-default,
+.card .price-default,
+.card .id-default,
+.title {
+    color: var(--header-text-color);
+}
+
+.total-price,
+.total-price-text,
+.total-price-off {
+    margin: 0 .1rem;
+    padding: 0 1.5rem;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.total-price {
+    color: var(--black);
+}
+
+.price-number-off {
+    color: red;
+}
+
+.total-price-off {
+    color: var(--green-dark);
+}
+
+.total-price-text {
+    text-decoration: line-through;
+}
+
+.price-number-off-sub {
+    padding: 0;
+    color: var(--header-text-color-2);
+}
+
+.item-user-basket-off {
+    width: 85%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--green);
+}
+
+.circle {
+    /* position: absolute; */
+    /* top: rem; */
+    /* right: 1rem; */
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 1px solid var(--purple);
+    border-radius: 100%;
+    background-color: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-dark);
+
+}
